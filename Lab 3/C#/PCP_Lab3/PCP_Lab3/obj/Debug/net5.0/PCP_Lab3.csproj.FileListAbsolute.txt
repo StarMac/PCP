@@ -1,0 +1,32 @@
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\PCP_Lab3.exe
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\PCP_Lab3.deps.json
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\PCP_Lab3.runtimeconfig.json
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\PCP_Lab3.runtimeconfig.dev.json
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\PCP_Lab3.dll
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\ref\PCP_Lab3.dll
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\PCP_Lab3.pdb
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.csprojAssemblyReference.cache
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.AssemblyInfoInputs.cache
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.AssemblyInfo.cs
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.dll
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\ref\PCP_Lab3.dll
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.pdb
+C:\Users\Maxim\source\repos\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.genruntimeconfig.cache
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\PCP_Lab3.exe
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\PCP_Lab3.deps.json
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\PCP_Lab3.runtimeconfig.json
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\PCP_Lab3.runtimeconfig.dev.json
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\PCP_Lab3.dll
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\ref\PCP_Lab3.dll
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\bin\Debug\net5.0\PCP_Lab3.pdb
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.csproj.AssemblyReference.cache
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.AssemblyInfoInputs.cache
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.AssemblyInfo.cs
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.dll
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\ref\PCP_Lab3.dll
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.pdb
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 3\C#\PCP_Lab3\PCP_Lab3\obj\Debug\net5.0\PCP_Lab3.genruntimeconfig.cache
