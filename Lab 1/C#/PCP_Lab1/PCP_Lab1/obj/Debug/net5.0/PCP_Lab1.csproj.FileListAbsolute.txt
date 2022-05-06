@@ -1,0 +1,32 @@
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\PCP_Lab1.exe
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\PCP_Lab1.deps.json
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\PCP_Lab1.runtimeconfig.json
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\PCP_Lab1.runtimeconfig.dev.json
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\PCP_Lab1.dll
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\ref\PCP_Lab1.dll
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\PCP_Lab1.pdb
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.csprojAssemblyReference.cache
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.AssemblyInfoInputs.cache
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.AssemblyInfo.cs
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.dll
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\ref\PCP_Lab1.dll
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.pdb
+C:\Users\Maxim\source\repos\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.genruntimeconfig.cache
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\PCP_Lab1.exe
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\PCP_Lab1.deps.json
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\PCP_Lab1.runtimeconfig.json
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\PCP_Lab1.runtimeconfig.dev.json
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\PCP_Lab1.dll
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\ref\PCP_Lab1.dll
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\bin\Debug\net5.0\PCP_Lab1.pdb
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.csprojAssemblyReference.cache
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.AssemblyInfoInputs.cache
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.AssemblyInfo.cs
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.dll
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\ref\PCP_Lab1.dll
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.pdb
+C:\Users\Maxim\Documents\GitHub\PCP\Lab 1\C#\PCP_Lab1\PCP_Lab1\obj\Debug\net5.0\PCP_Lab1.genruntimeconfig.cache
