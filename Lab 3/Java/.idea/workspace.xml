@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9c0d883-7793-4b9d-abfa-0ce70c960d5a" name="Default Changelist" comment="" />
+    <list default="true" id="a9c0d883-7793-4b9d-abfa-0ce70c960d5a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../C#/PCP_Lab3/.vs/PCP_Lab3/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../C#/PCP_Lab3/.vs/PCP_Lab3/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C#/PCP_Lab3/.vs/PCP_Lab3/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../C#/PCP_Lab3/.vs/PCP_Lab3/v16/.suo" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651814111032</updated>
       <workItem from="1651814113111" duration="31000" />
+      <workItem from="1651824559652" duration="1198000" />
     </task>
     <servers />
   </component>
@@ -47,5 +51,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
