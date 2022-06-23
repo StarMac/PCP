@@ -17,19 +17,20 @@ namespace PCP_Lab2
 
             for (int i = 0; i < arr.Length; i++)
             {
-                arr[i] = random.Next();
+                arr[i] = random.Next() - 1000;
             }
 
+            FindMin(arr, 3);
+            FindMin(arr, 6);
+            FindMin(arr, 8);
             FindMin(arr, 10);
-            FindMin(arr, 12);
-            FindMin(arr, 14);
-            FindMin(arr, 9);
         }
         private void FindMin(int[] arr, int threadsCount)
         {
             Thread [] threads = new Thread[threadsCount];
 
             int min = int.MaxValue;
+            int minIndex = -1;
             object block = new object();
 
             for (int threadId = 0; threadId < threads.Length; threadId++)
@@ -45,6 +46,7 @@ namespace PCP_Lab2
                             if (arr[i] < min)
                             {
                                 min = arr[i];
+                                minIndex = i;
                             }
                         }
                     }
@@ -58,7 +60,7 @@ namespace PCP_Lab2
                 item.Join();
             }
 
-            Console.WriteLine($"Count of threads: {threadsCount}, min: {min}");
+            Console.WriteLine($"Count of threads: {threadsCount}, min: {min}, minIndex: {minIndex}");
         }
     }
 }
