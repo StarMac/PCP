@@ -5,6 +5,10 @@ namespace PCP_Lab2
 {
     class Program
     {
+        int[,] globalResults;
+        private const int KEY_VALUE = 0;
+        private const int KEY_INDEX = 1;
+
         public static void Main(string[] args)
         {
             new Program().Start();
@@ -27,40 +31,56 @@ namespace PCP_Lab2
         }
         private void FindMin(int[] arr, int threadsCount)
         {
-            Thread [] threads = new Thread[threadsCount];
+            globalResults = new int[threadsCount, 2];
 
-            int min = int.MaxValue;
-            int minIndex = -1;
-            object block = new object();
+            for (int i = 0; i < threadsCount; i++)
+            {
+                globalResults[i, KEY_VALUE] = int.MaxValue;
+                globalResults[i,KEY_INDEX] = -1;
+            }
+
+            Thread [] threads = new Thread[threadsCount];
 
             for (int threadId = 0; threadId < threads.Length; threadId++)
             {
                 int _threadId = threadId;
                 threads[threadId] = new Thread(() =>
                 {
-                    for (int i = arr.Length * _threadId / threadsCount; i < arr.Length *
-                    (_threadId + 1) / threadsCount; i++)
+                int from = arr.Length * _threadId / threadsCount;
+                int until = arr.Length * (_threadId + 1) / threadsCount;
+                    //Console.WriteLine("Started thread(" + _threadId + ") from = " + from + ", until: " + until);
+                    for (int index = from; index < until; index++)
+                {
+                    if (arr[index] < globalResults[_threadId, KEY_VALUE])
                     {
-                        lock (block)
-                        {
-                            if (arr[i] < min)
-                            {
-                                min = arr[i];
-                                minIndex = i;
-                            }
-                        }
+                            globalResults[_threadId, KEY_VALUE] = arr[index];
+                            globalResults[_threadId, KEY_INDEX] = index;
                     }
+                }
+                    //Console.WriteLine("Done thread(" + _threadId + ") from = " + from + ", until: " + until + ", minValue = " + globalResults[_threadId, KEY_VALUE] + ", minIndex = " + globalResults[_threadId, KEY_INDEX]);
                 });
 
-                threads[threadId].Start();
-            }
+            threads[threadId].Start();
+        }
 
             foreach (var item in threads)
             {
                 item.Join();
             }
 
-            Console.WriteLine($"Count of threads: {threadsCount}, min: {min}, minIndex: {minIndex}");
+            int minIndex = -1;
+            int minValue = int.MaxValue;
+            for (int i = 0; i < threadsCount; i++)
+            {
+                int value = globalResults[i, KEY_VALUE];
+                if (value < minValue)
+                {
+                    minValue = value;
+                    minIndex = globalResults[i, KEY_INDEX];
+                }
+            }
+
+            Console.WriteLine($"Count of threads: {threadsCount}, min: {minValue}, minIndex: {minIndex}");
         }
     }
 }
