@@ -2,11 +2,12 @@
 #include<iostream>
 #include<locale>
 #include"omp.h"
+#include <cstdlib>
 
 using namespace std;
 
-const int arr_size = 10000;
-const int arr_size2 = 20000;
+const int arr_size = 2000;
+const int arr_size2 = 1000;
 int arr[arr_size][arr_size2];
 
 void init_arr();
@@ -50,7 +51,7 @@ int main() {
 void init_arr() {
     for (int i = 0; i < arr_size; i++) {
         for (int j = 0; j < arr_size2; j++) {
-            arr[i][j] = i + j;
+            arr[i][j] = rand() % 232 - 141;
         }
 
     }
@@ -79,14 +80,12 @@ long long parallel_min(int start_index, int finish_index, int start_index2, int 
     int arrSum[arr_size];
     double t1 = omp_get_wtime();
     long long sum;
-    int sumMin;
-    int rowMinIndex;
+    int sumMin = 0;
+    int rowMinIndex = -1;
 #pragma omp parallel for num_threads(num_threads)
 
     for (int i = start_index; i < finish_index; i++) {
         sum = 0;
-        sumMin = arrSum[0];
-        rowMinIndex = 0;
         for (int j = start_index2; j < finish_index2; j++) {
             sum += arr[i][j];
         }
