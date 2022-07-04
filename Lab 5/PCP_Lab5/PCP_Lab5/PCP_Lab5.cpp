@@ -5,13 +5,13 @@
 
 using namespace std;
 
-const int arr_size = 20000;
-const int arr_size2 = 20000;
+const int arr_size = 100;
+const int arr_size2 = 200;
 int arr[arr_size][arr_size2];
 
 void init_arr();
-long long part_sum(int, int, int, int, int);
-long long part_min(int, int, int, int, int);
+long long parallel_sum(int, int, int, int, int);
+long long parallel_min(int, int, int, int, int);
 
 int main() {
     init_arr();
@@ -22,22 +22,22 @@ int main() {
     {
 #pragma omp section
         {   
-        cout << "Result 1 = " << part_sum(0, arr_size, 0, arr_size2, 1) << endl;
-        cout << "Result 2 = " << part_sum(0, arr_size, 0, arr_size2, 2) << endl;
-        cout << "Result 3 = " << part_sum(0, arr_size, 0, arr_size2, 3) << endl;
-        cout << "Result 4 = " << part_sum(0, arr_size, 0, arr_size2, 4) << endl;
-        cout << "Result 8 = " << part_sum(0, arr_size, 0, arr_size2, 8) << endl;
-        cout << "Result 16 = " << part_sum(0, arr_size, 0, arr_size2, 16) << endl;
+        cout << "sum 1 = " << parallel_sum(0, arr_size, 0, arr_size2, 1) << endl;
+        cout << "sum 2 = " << parallel_sum(0, arr_size, 0, arr_size2, 2) << endl;
+        cout << "sum 3 = " << parallel_sum(0, arr_size, 0, arr_size2, 3) << endl;
+        cout << "sum 4 = " << parallel_sum(0, arr_size, 0, arr_size2, 4) << endl;
+        cout << "sum 8 = " << parallel_sum(0, arr_size, 0, arr_size2, 8) << endl;
+        cout << "sum 16 = " << parallel_sum(0, arr_size, 0, arr_size2, 16) << endl;
         }
 
 #pragma omp section
         {
-            cout << "Result 1 = " << part_min(0, arr_size, 0, arr_size2, 1) << endl;
-            cout << "Result 2 = " << part_min(0, arr_size, 0, arr_size2, 2) << endl;
-            cout << "Result 3 = " << part_min(0, arr_size, 0, arr_size2, 3) << endl;
-            cout << "Result 4 = " << part_min(0, arr_size, 0, arr_size2, 4) << endl;
-            cout << "Result 8 = " << part_min(0, arr_size, 0, arr_size2, 8) << endl;
-            cout << "Result 16 = " << part_min(0, arr_size, 0, arr_size2, 16) << endl;
+            cout << "row with min sum 1 = " << parallel_min(0, arr_size, 0, arr_size2, 1) << endl;
+            cout << "row with min sum 2 = " << parallel_min(0, arr_size, 0, arr_size2, 2) << endl;
+            cout << "row with min sum 3 = " << parallel_min(0, arr_size, 0, arr_size2, 3) << endl;
+            cout << "row with min sum 4 = " << parallel_min(0, arr_size, 0, arr_size2, 4) << endl;
+            cout << "row with min sum 8 = " << parallel_min(0, arr_size, 0, arr_size2, 8) << endl;
+            cout << "row with min sum 16 = " << parallel_min(0, arr_size, 0, arr_size2, 16) << endl;
         }
     }
 
@@ -58,7 +58,7 @@ void init_arr() {
 
 }
 
-long long part_sum(int start_index, int finish_index, int start_index2, int finish_index2, int num_threads) {
+long long parallel_sum(int start_index, int finish_index, int start_index2, int finish_index2, int num_threads) {
     long long sum = 0;
     double t1 = omp_get_wtime();
 #pragma omp parallel for reduction(+:sum) num_threads(num_threads)  
@@ -70,12 +70,12 @@ long long part_sum(int start_index, int finish_index, int start_index2, int fini
     }
 
     double t2 = omp_get_wtime();
-    cout << "Total sum of all elements, " << "Thread - " << num_threads << ", time -  " << t2 - t1 << " seconds" << endl;
+    cout << "Total sum of all elements, " << "threads worked - " << num_threads << ", time - " << t2 - t1 << " seconds" << endl;
 
     return sum;
 }
 
-long long part_min(int start_index, int finish_index, int start_index2, int finish_index2, int num_threads) {
+long long parallel_min(int start_index, int finish_index, int start_index2, int finish_index2, int num_threads) {
     int arrSum[arr_size];
     double t1 = omp_get_wtime();
     long long sum;
@@ -104,7 +104,7 @@ long long part_min(int start_index, int finish_index, int start_index2, int fini
 
     double t2 = omp_get_wtime();
 
-    cout << "The minimum sum is in a row " << rowMinIndex + 1 << ", Thread - " << num_threads << ", time -  " << t2 - t1 << " seconds" << endl;
+    cout << "The minimum sum is in a row " << rowMinIndex + 1 << ", threads worked - " << num_threads << ", time - " << t2 - t1 << " seconds" << endl;
 
     return sumMin;
 }
