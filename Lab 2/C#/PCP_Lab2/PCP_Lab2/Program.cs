@@ -8,6 +8,9 @@ namespace PCP_Lab2
         int[,] globalResults;
         private const int KEY_VALUE = 0;
         private const int KEY_INDEX = 1;
+        private int minIndex = -1;
+        private int minValue = int.MaxValue;
+        private readonly object locker = new object();
 
         public static void Main(string[] args)
         {
@@ -32,6 +35,8 @@ namespace PCP_Lab2
         private void FindMin(int[] arr, int threadsCount)
         {
             globalResults = new int[threadsCount, 2];
+            minIndex = -1;
+            minValue = int.MaxValue;
 
             for (int i = 0; i < threadsCount; i++)
             {
@@ -57,6 +62,10 @@ namespace PCP_Lab2
                             globalResults[_threadId, KEY_INDEX] = index;
                     }
                 }
+                    lock (locker)
+                    {
+                        SetMin(_threadId);
+                    }
                     //Console.WriteLine("Done thread(" + _threadId + ") from = " + from + ", until: " + until + ", minValue = " + globalResults[_threadId, KEY_VALUE] + ", minIndex = " + globalResults[_threadId, KEY_INDEX]);
                 });
 
@@ -68,19 +77,18 @@ namespace PCP_Lab2
                 item.Join();
             }
 
-            int minIndex = -1;
-            int minValue = int.MaxValue;
-            for (int i = 0; i < threadsCount; i++)
-            {
-                int value = globalResults[i, KEY_VALUE];
-                if (value < minValue)
-                {
-                    minValue = value;
-                    minIndex = globalResults[i, KEY_INDEX];
-                }
-            }
-
             Console.WriteLine($"Count of threads: {threadsCount}, min: {minValue}, minIndex: {minIndex}");
         }
+
+        private void SetMin(int threadId)
+        {
+            int value = globalResults[threadId, KEY_VALUE];
+            if (value < minValue)
+            {
+                minValue = value;
+                minIndex = globalResults[threadId, KEY_INDEX];
+            }
+        }
+
     }
 }
