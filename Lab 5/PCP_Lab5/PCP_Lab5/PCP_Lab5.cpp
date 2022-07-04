@@ -5,8 +5,8 @@
 
 using namespace std;
 
-const int arr_size = 100;
-const int arr_size2 = 200;
+const int arr_size = 10000;
+const int arr_size2 = 20000;
 int arr[arr_size][arr_size2];
 
 void init_arr();
